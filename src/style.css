@@ -1,0 +1,209 @@
+html {
+  min-height: 100vh;
+  color: black;
+  overflow-x: hidden;
+  font-family: "Fredoka One";
+}
+body {
+  background:linear-gradient(180deg,#071029 0%, #061224 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .settings {
+    min-width: fit-content;
+    padding: 2% 10%;
+  }
+  .footer {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 5vw;
+  }
+}
+
+.Title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  filter: drop-shadow(0 0 6px rgba(235, 219, 178, 0.33));
+}
+.Title img {
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.Menu,
+.RateMenu,
+.ImportMenu {
+  background:linear-gradient(45deg,#121e44,#084139);
+  box-shadow:0 6px 24px rgba(0,0,0,0.6);
+  margin: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  min-width: 75%;
+  max-width: 75%;
+  text-align: center;
+}
+.RateMenu {
+  flex-wrap: wrap;
+  min-width: 30%;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.OptionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ImportButton,
+.ControlButton {
+  font-family: "Fredoka One";
+  margin: 5px;
+  border-radius: 25px;
+  background:linear-gradient(45deg,#2f4eb3,#16ac98);
+  border-color: black;
+  border-style: solid;
+}
+
+.Buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(64px, 128px));
+  gap: 5px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.MachineButton,
+.DeselectedButton,
+.SelectedButton {
+  height: 128px;
+  width: 128px;
+  font-family: "Fredoka One";
+  margin: 5px;
+  border-radius: 25px;
+  background: linear-gradient(to bottom,#1e1e27,#0d0d1a);
+  box-shadow:0 6px 24px rgba(0,0,0,0.25);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+}
+.DeselectedButton {
+ border-color: #cd1c18;
+}
+.SelectedButton {
+  border-color: #7CFC00;
+}
+.MachineButton {
+  height: 192px;
+}
+
+.MachineIcon {
+  width: auto;
+  max-width: 64px;
+  height: auto;
+  max-height: 64px;
+}
+
+.ImportMachines,
+.AmountInput,
+.SearchInput {
+  font-family: "Fredoka One";
+  width: 75%;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background:linear-gradient(45deg,#121e44,#084139);
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  color:rgb(175, 175, 175);
+}
+.SearchInput {
+  min-width: 25%;
+  min-height: 40px;
+}
+.MachineText {
+  font-size: 90%;
+  color:grey;
+}
+
+.BrownText{background:linear-gradient(to bottom,#b37400,#774d00);}
+.OrangeText{background:linear-gradient(to bottom,#ffa500,#b37400);}
+.RedText{background:linear-gradient(to bottom,#ff3c00,#d43200);}
+.MoneyText{background:linear-gradient(to bottom,#00ff00,#008f00);}
+.GreyText{background:linear-gradient(to bottom,#858585,#b6b6b6);}
+.BrownText,.OrangeText,.RedText,.MoneyText,.GreyText{
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ImportMachines {
+  font-size: 20px;
+  min-width: 60%;
+  min-height: 40px;
+}
+.ImportButton{
+  font-size: 20px;
+  min-width: 60%;
+  min-height: 40px;
+  border-radius: 10px;
+}
+.ImportMenu {
+  min-width: 40%;
+  min-height: 20%;
+}
+.Backing {
+  min-width: 100%;
+  min-height: 100%;
+  background: #00000080;
+  position: fixed;
+  z-index: 1000;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  border: none;
+  grid-template-columns: 100%;
+}
+
+.Footer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  min-height: 25px;
+  background: rgba(0, 0, 0, 0.35);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: "Fredoka One";
+  position: relative;
+  color: black;
+  border-radius: 5px;
+  font-size: 90%;
+}
+.Footer a {
+  color: #519da1;
+}
+.Footer span {
+  margin-left: 5px;
+  margin-right: 5px;
+}

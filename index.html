@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Machine Calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./src/PowerIcon.png" />
+    <meta property="og:title" content="Machine Calculator" />
+    <meta property="og:description" content="Machine Calculator app for Industrialist Roblox."/>
+    <meta property="og:site_name" content="GitHub Pages" />
+    <meta property="og:image" content="./src/PowerIcon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka One" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="module" src="./src/script.js"></script>
+  </head>
+  
+  <div class="Title">
+    <img src="./src/PowerIcon.png">
+  </div>
+
+  <div class="Backing" id="ImportMenu" style="display:none;">
+    <dialog id="ImportBox" class="ImportMenu">
+      <input class="ImportMachines" type="text" id="ImportMachineInput">
+      <button class="ImportButton" id="Import">Import Machine JSON</button>
+    </dialog>
+  </div>
+
+  <div class="Menu">
+    <h2>⚙️<u class="GreyText">Add Machines!</u>⚙️</h2>
+    <input id="MachineSearch" class="SearchInput" placeholder="Search..." type="text" step="1" min="0">
+    <p id="AddMachinesSelected" class="GreyText">Selected: None</p>
+    <div class="OptionButtons">
+      <button class="ControlButton" id="AddSelected">Add Selected</button>
+      <button class="ControlButton" id="Deselect">Deselect</button>
+    </div>
+    <div class="Buttons" id="MachineButtons"></div>
+  </div>
+
+  <div class="RateMenu">
+    <h2>⚙️<u class="GreyText">Current Machine Stats</u>⚙️</h2>
+    <p id="CurrentMachinesSelected" class="GreyText">Selected: None</p>
+    <p id="MachinesPrice" class="MoneyText">Price: $0</p>
+    <p id="MachinesPollution" class="OrangeText">Power: 0 KMF/s</p>
+    <p id="MachinesPower" class="BrownText">Pollution: 0 %/hr</p>
+  </div>
+
+  <div class="Menu">
+    <h2>⚙️<u class="GreyText">Current Machines</u>⚙️</h2>
+    <div class="OptionButtons">
+      <button class="ControlButton" id="ClearMachines">Clear Machines</button>
+      <button class="ControlButton" id="ExportMachines">Export Machines</button>
+      <button class="ControlButton" id="ImportMachines">Import Machines</button>
+    </div>
+    <div class="Buttons" id="SelectedMachineButtons"></div>
+  </div>
+  </body>
+  
+  <p class="Footer">
+    <a href="https://github.com/fizzy-gamer/MachineCalculator">Source Code</a>
+    <span class="GreyText">• Calculator made by</span>
+    <a href="https://github.com/fizzy-gamer">@fizzygamer</a>
+  </p>
+</html>
